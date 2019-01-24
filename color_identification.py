@@ -4,7 +4,7 @@ import imutils
 
 # 객체를 만들 때 클래스(colorIdentification())를 호출하면서 opencv로 읽어들인 이미지 객체명을 입력함.
 # color라는 함수는 사진 속 물체의 색상을 리턴함.
-# 현재 빨강, 초록, 파랑, 검은색, 하얀색/회색을 지원함.
+# 현재 빨강, 초록, 파랑, 노랑, 주황, 검은색, 하얀색/회색을 지원함.
 
 def colorEqualize(image):
     image_hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
