@@ -75,7 +75,7 @@ class colorIdentification():
                        'white_or_gray': 0}
 
         for i in list(color_list):
-            if i == 'red' or 'green' or 'blue':
+            if i == 'red1' or 'red2' or 'green' or 'blue' or 'yellow' or 'orange':
                 lower_color = (color_list[i][0] - 10, color_list[i][1] - 222, color_list[i][2] - 210)
                 upper_color = (color_list[i][0] + 10, color_list[i][1], color_list[i][2])
 
