@@ -2,7 +2,8 @@ import numpy as np
 import cv2
 import imutils
 
-# carplateDetecting이라는 객체를 만들 때 이미지 경로, 라벨 경로, 설정파일 경로, 가중치파일 경로를 지정해준다.
+# carplateDetecting이라는 클래스를 호출해 객체를 만들 때 이미지 객체, 라벨 경로, 설정파일 경로, 가중치파일 경로를 지정
+# 이미지 객체를 지정하는 곳에는 파일 이름이 아닌 opencv로 읽어들인 이미지 객체명을 써줘야 함
 # ex) detect = carplateDetecting(이미지, 라벨, 설정, 가중치)
 # detect 함수는 사진에 번호판을 표시해줌
 # ex) image = detect.detect()
@@ -11,11 +12,11 @@ import imutils
 
 
 class carplateDetecting:
-    def __init__(self, imagePath, labelsPath, configPath, weightsPath):
+    def __init__(self, image, labelsPath, configPath, weightsPath):
         self.labelsPath = labelsPath
         self.configPath = configPath
         self.weightsPath = weightsPath
-        self.imagePath = imagePath
+        self.image = image
 
     def detect(self, imagesize=800):
         # read labels
@@ -31,7 +32,7 @@ class carplateDetecting:
 
         # load image with opencv
         # imagePath = 'car.jpg'
-        image = cv2.imread(self.imagePath)
+        image = self.image
         # (h, w) = image.shape[:2]
         # width_size = imagesize
         # height_size = (width_size / w) * h
@@ -90,7 +91,7 @@ class carplateDetecting:
 
         # load image with opencv
         # imagePath = 'car.jpg'
-        image = cv2.imread(self.imagePath)
+        image = self.image
         image = imutils.resize(image, imagesize) # resize
         (H, W) = image.shape[:2] # 이미지 높이와 폭을 변수로 등록
 
