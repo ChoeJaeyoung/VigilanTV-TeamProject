@@ -59,15 +59,25 @@ class colorIdentification():
                       'red2': [180, 255, 255],
                       'green': [60, 255, 255],
                       'blue': [120, 255, 255],
+                      'yellow': [30, 255, 255],
+                      'orange': [12, 255, 255],
                       'black': [0, 0, 0],
                       'white_or_gray': [0, 0, 255]}
 
-        color_count = {'red': 0, 'red1': 0, 'red2': 0, 'green': 0, 'blue': 0, 'black': 0, 'white_or_gray': 0}
+        color_count = {'red': 0,
+                       'red1': 0,
+                       'red2': 0,
+                       'green': 0,
+                       'blue': 0,
+                       'yellow': 0,
+                       'orange': 0,
+                       'black': 0,
+                       'white_or_gray': 0}
 
         for i in list(color_list):
             if i == 'red' or 'green' or 'blue':
-                lower_color = (color_list[i][0] - 20, color_list[i][1] - 222, color_list[i][2] - 210)
-                upper_color = (color_list[i][0] + 20, color_list[i][1], color_list[i][2])
+                lower_color = (color_list[i][0] - 10, color_list[i][1] - 222, color_list[i][2] - 210)
+                upper_color = (color_list[i][0] + 10, color_list[i][1], color_list[i][2])
 
             if i == 'black':
                 lower_color = (0, 0, 1)
