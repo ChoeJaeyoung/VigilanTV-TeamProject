@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 import imutils
 
-# carplateDetecting이라는 클래스를 호출해 객체를 만들 때 이미지 객체, 라벨 경로, 설정파일 경로, 가중치파일 경로를 지정
+# carplateDetecting이라는 객체를 만들 때 이미지 객체, 라벨 경로, 설정파일 경로, 가중치파일 경로를 지정
 # 이미지 객체를 지정하는 곳에는 파일 이름이 아닌 opencv로 읽어들인 이미지 객체명을 써줘야 함
 # ex) detect = carplateDetecting(이미지, 라벨, 설정, 가중치)
 # detect 함수는 사진에 번호판을 표시해줌
@@ -132,4 +132,8 @@ class carplateDetecting:
                 y2 = y1+h
                 plate = image[y1:y2, x1:x2]
                 plates.append(plate)
-        return plates[0]
+
+        if len(plates) == 0:
+            return image[1:2, 1:2]
+        else:
+            return plates[0]
