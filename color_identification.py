@@ -89,7 +89,7 @@ class colorIdentification():
                 upper_color = (35, 90, 145)
 
             if i == 'black2':
-                lower_color = (100, 0, 1)
+                lower_color = (90, 0, 1)
                 upper_color = (150, 90, 145)
 
             if i == 'white_or_gray1':
