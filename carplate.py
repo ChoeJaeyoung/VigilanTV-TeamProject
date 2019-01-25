@@ -8,7 +8,7 @@ import imutils
 # detect 함수는 사진에 번호판을 표시해줌
 # ex) image = detect.detect()
 # 번호판 파싱엔 parse 함수를 사용할 것
-
+# (주의) 파싱 함수는 아무 것도 감지하지 못할 경우 1x1의 이미지를 리턴함.
 
 
 class carplateDetecting:
