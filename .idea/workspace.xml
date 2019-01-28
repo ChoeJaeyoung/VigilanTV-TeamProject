@@ -239,26 +239,6 @@
         <entry key="User">
           <value>
             <list />
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
           </value>
         </entry>
       </map>
@@ -277,11 +257,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Tracking-with-darkflow2/track_fps_crop_save.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
@@ -305,6 +280,5 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/darkflow/test.py" />
   </component>
 </project>
