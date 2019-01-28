@@ -113,8 +113,8 @@ class colorIdentification():
         car_color = max(color_count.items(), key=lambda x: x[1])[0]
 
         return car_color
-
-image1 = cv2.imread('car.jpg')
-identificator = colorIdentification(image1)
-color = identificator.color()
-print(color)
+#
+# image1 = cv2.imread('car.jpg')
+# identificator = colorIdentification(image1)
+# color = identificator.color()
+# print(color)
