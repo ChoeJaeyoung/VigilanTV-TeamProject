@@ -5,7 +5,7 @@ import PIL
 capture_path = "C:/Users/Elite/Desktop/ocr/"
 pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files (x86)/Tesseract-OCR/tesseract'
 
-for i in range(1,113):
+for i in range(1,114):
     img_path = capture_path + "test(" + str(i) + ").jpg"
     fp = open(img_path, "rb")
     img = PIL.Image.open(fp)
