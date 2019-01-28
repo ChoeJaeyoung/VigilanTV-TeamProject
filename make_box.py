@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import pytesseract
-import cv2
 import PIL
 import pandas as pd
 
