@@ -4,10 +4,18 @@ import cv2
 import math
 import imutils
 
+
+img_number = '12'
+inputFileName = 'realdata2/'+img_number+'.jpg'
+outputFileName = 'realoutput2/'+img_number+'.jpg'
+
+
 noise = 0
+
 
 def removeNoise(img_edge2):
     img = img_edge2
+
 
     cnt, contours, hierarchy = cv2.findContours(img, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
     box_point = []
@@ -15,7 +23,7 @@ def removeNoise(img_edge2):
     select = 0
     plate_width = 0
 
-    global height, width
+    img_height, img_width = img.shape
     for i in range(len(contours)):
         cnt = contours[i]
         area = cv2.contourArea(cnt)
@@ -24,14 +32,17 @@ def removeNoise(img_edge2):
         aspect_ratio = float(w) / h
         aspect_ratio2 = float(h) / w
 
-        if (aspect_ratio2 >= 0.3) and (h > (height*0.2)):
-            #cv2.rectangle(img_big, (x, y), (x+w, y+h), (0, 255, 0), 1)
-            #box_point.append(cv2.boundingRect(cnt))
-            continue;
-        elif (w < width*0.8):
+        if (h < (img_height*0.1)) or (w < (img_width*0.05)):
             cv2.rectangle(img, (x, y), (x + w, y + h), (255, 255, 255), -1)
-            continue;
-    cv2.imshow('remove_noise', img)
+
+        #if (aspect_ratio2 >= 0.3) and (h > (img_height*0.2)) and (w > (img_width*0.1)):
+        #    cv2.rectangle(img, (x, y), (x+w, y+h), (0, 255, 255), 1)
+        #    box_point.append(cv2.boundingRect(cnt))
+        #    continue;
+        #elif (w < img_width*0.8):
+        #    cv2.rectangle(img, (x, y), (x + w, y + h), (255, 255, 255), 1)
+        #    continue;
+    #cv2.imshow('remove_noise', img)
 
     return img
 
@@ -40,9 +51,9 @@ def img_preprocessing(img):
     img_original = img
 
     # 이미지 흑백화
-    img_original = cv2.cvtColor(img_original, cv2.COLOR_BGR2GRAY)
+    imgray = cv2.cvtColor(img_original, cv2.COLOR_BGR2GRAY)
 
-    imgray = cv2.bilateralFilter(img_original, 8, 50, 50)
+    imgray = cv2.bilateralFilter(imgray, 8, 50, 50)
     cv2.imshow('blur', imgray)
 
     # 이미지 수축
@@ -60,7 +71,7 @@ def img_preprocessing(img):
     cv2.imshow('equalizeHist', imgray)
 
     # 이미지 이진화
-    imgray = cv2.adaptiveThreshold(imgray, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 11, 3)
+    imgray = cv2.adaptiveThreshold(imgray, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 11, 2)
 
     # 이미지 팽창
     kernel = np.ones((5, 5), np.uint8)
@@ -101,38 +112,22 @@ def detect_line(img):
 
         return angle
 
-def img_rotate(img, degree):
-    #\height, width = img.shape
-    #matrix = cv2.getRotationMatrix2D((width / 2, height / 2), -(degree + 90), 1)
-    #dst = cv2.warpAffine(img, matrix, (width, height))
 
-    dst = imutils.rotate_bound(img, (degree + 90))
+def img_rotate(img, degree):
+    global height, width, channel
+    matrix = cv2.getRotationMatrix2D((width / 2, height / 2), -(degree + 90), 1)
+    dst = cv2.warpAffine(img, matrix, (width, height))
+
+    #dst = imutils.rotate_bound(img, (degree + 90))
 
     return dst
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # 이미지 로드
 
-img_number = '2'
-inputFileName = 'realdata2/'+img_number+'.jpg'
-outputFileName = 'realoutput2/'+img_number+'.jpg'
 img_original = cv2.imread(inputFileName, cv2.IMREAD_COLOR)
 
-hist_full = cv2.calcHist([img_original],[1],None,[256],[0,256])
+hist_full = cv2.calcHist([img_original], [1], None, [256], [0, 256])
 print("histogram", hist_full)
 # 이미지 확대
 img_original = cv2.resize(img_original, None, fx=4, fy=4, interpolation=cv2.INTER_LINEAR)
@@ -205,10 +200,10 @@ def find_number(img_edge2, img_original):
 
             continue;
         else:
-            #cv2.rectangle(img_original, (x, y), (x + w, y + h), (100, 100, 100), 1)
+            #cv2.rectangle(img_original, (x, y), (x + w, y + h), (100, 100, 100), 2)
             continue;
 
-    #cv2.rectangle(img_original, (row_x, row_y), (high_x, high_y), (0, 255, 0), 1)
+    cv2.rectangle(img_original, (row_x, row_y), (high_x, high_y), (0, 255, 0), 1)
     box_point.append(cv2.boundingRect(cnt))
 
     img_big = cv2.resize(img_big, None, fx=1, fy=1, interpolation=cv2.INTER_CUBIC)
@@ -216,12 +211,50 @@ def find_number(img_edge2, img_original):
     return img_original
 
 
+# 번호판 모양의 사각형만 추출
+def contour3(img):
+    img_gray = img
+    ret, thresh = cv2.threshold(img_gray, 127, 255, 0)
+    _, contours, _ = cv2.findContours(thresh, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+    detect = []
+
+    for cnt in contours:
+        approx = cv2.approxPolyDP(cnt, 0.01 * cv2.arcLength(cnt, True), True)
+        if len(approx) == 4:
+            x, y, w, h = cv2.boundingRect(cnt)
+            print("square")
+            print("approx", approx)
+            detect = approx
+            #cv2.rectangle(img, (x, y), (x + w+1, y + h+1), (255, 255, 255), -10)
+
+    cv2.imshow('Detect Squre in Plate', img)
+
+    return img
+
+
+# 이미지 수축
+kernel2 = np.ones((3, 3), np.uint8)
+result = cv2.dilate(result, kernel2, iterations=1)
+cv2.imshow('result', result)
+
+
 img_original2 = img_rotate(img_original, degree)
+result = removeNoise(result)
+cv2.imshow('noise', result)
+
 result2 = find_number(result, img_original2)
 cv2.imshow('img_original', img_original)
 cv2.imshow('find_number', result2)
 
-cv2.imwrite(outputFileName, result2[row_y-2: high_y+2, row_x-2: high_x+2])
+result = removeNoise(result[row_y: high_y, row_x: high_x])
+cv2.imshow('-----', result)
+
+#result = contour3(result)
+#cv2.imshow('img_original_noise2', result)
+
+result = cv2.resize(result,  dsize=(432, 98), interpolation=cv2.INTER_LINEAR)
+
+cv2.imwrite(outputFileName, result)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
