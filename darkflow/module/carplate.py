@@ -10,6 +10,9 @@ import imutils
 # 번호판 파싱엔 parse 함수를 사용할 것
 # (주의) 파싱 함수는 아무 것도 감지하지 못할 경우 1x1의 이미지를 리턴함.
 
+# detect = carplateDetecting(carIMG, 'cfg/obj.names' ,'cfg/yolov2-carplate.cfg', 'yolov2-carplate_2200.weights')
+# saveIMG = detect.parse()
+
 
 class carplateDetecting:
     def __init__(self, image, labelsPath, configPath, weightsPath):
