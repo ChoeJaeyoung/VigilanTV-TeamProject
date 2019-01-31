@@ -11,6 +11,7 @@ class out_result :
         config = ('-l ' + ocr_lang + ' --oem 0 --psm 6')
         txt = pytesseract.image_to_string(img, config= config)
         print("ocr 결과 : " + txt)
+        return txt
 
 # ocr = out_result('img/rcar1.jpg')
 # resultOCR = ocr.output()
