@@ -1,4 +1,4 @@
-from darkflow.darkflow.net.build import TFNet
+from darkflow.net.build import TFNet
 import cv2
 import numpy as np
 from sort.sort import *
@@ -8,7 +8,7 @@ import os
 
 timecheck = 0
 
-options = {"model": "darkflow/cfg/yolo.cfg", "load": "darkflow/bin/yolo.weights", "threshold": 0.5}  # threshold가 신뢰율임
+options = {"model": "cfg/yolo.cfg", "load": "bin/yolo.weights", "threshold": 0.5}  # threshold가 신뢰율임
 tfnet = TFNet(options)  # JSON
 
 
