@@ -41,7 +41,7 @@ for i in range(1,112):
     f = open(capture_path + 'font_testkor' + '.txt', 'a')
     f.write(txt+ '\n')
 
-    #한글 단어 개수
+    #한글 단어 개수 세기
     for idx in box_data:
         if idx in han:
             han[idx] = han[idx] + 1

@@ -11,7 +11,7 @@ for i in range(323,359):
     img_path = capture_path + "upexam(" + str(i) + ").jpg"
     fp = open(img_path, "rb")
     img = PIL.Image.open(fp)
-    #make_box
+    #박스 생성하기
     txt = pytesseract.image_to_boxes(img, lang="52font+1499")
     print("ocr 결과 : " + txt)
     print('index' + str(i))
