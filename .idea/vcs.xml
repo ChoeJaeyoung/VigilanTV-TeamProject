@@ -2,5 +2,11 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Tracking-with-darkflow2_ok" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Tracking-with-darkflow2_ok - 복사본" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Tracking-with-darkflow2_ok - 복사본/darkflow" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Tracking-with-darkflow2_ok/darkflow" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Tracking-with-darkflow2_ok/deep_sort" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Tracking-with-darkflow2_ok/sort" vcs="Git" />
   </component>
 </project>

@@ -154,7 +154,7 @@ class extract_opencv:
                 # cv2.rectangle(img_original, (x, y), (x + w, y + h), (100, 100, 100), 2)
                 continue;
 
-        cv2.rectangle(img_original, (row_x, row_y), (high_x, high_y), (0, 255, 0), 1)
+        #cv2.rectangle(img_original, (row_x, row_y), (high_x, high_y), (0, 255, 0), 1)
         box_point.append(cv2.boundingRect(cnt))
 
         return img_original, high_y, high_x, row_y, row_x
