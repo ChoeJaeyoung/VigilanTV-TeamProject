@@ -3,24 +3,24 @@ import pytesseract
 import PIL
 import pandas as pd
 
-capture_path = "C:/Users/Elite/Desktop/makebox/exam/"
+capture_path = "C:/Users/Elite/Desktop/makebox/test/"
 all_words = 0
 counts = 0
 fail = []
 
-for i in range(1,392):
+for i in range(1,5):
     #box 불러오기
-    df = pd.read_csv(capture_path + 'exam (' + str(i) +').box', sep=' ', header=None)
+    df = pd.read_csv(capture_path + 'car' + str(i) +'.box', sep=' ', header=None)
     box_data = df[0].tolist()
     print(df)
     print(box_data)
 
     #img파일
-    img_path = capture_path + "exam (" + str(i) + ").jpg"
+    img_path = capture_path + "car" + str(i) + ".jpg"
     fp = open(img_path, "rb")
     img = PIL.Image.open(fp)
     #config setting
-    config= ('-l font+vkor --oem 0 --psm 6')
+    config= ('-l 1024all+52font --oem 0 --psm 6')
     #ocr_result
     txt = pytesseract.image_to_string(img, config= config)
     all_words += 7
