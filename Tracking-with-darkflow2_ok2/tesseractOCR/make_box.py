@@ -2,30 +2,39 @@
 import pytesseract
 import PIL
 import pandas as pd
+import re
 
-capture_path = "C:/Users/Elite/Desktop/makebox/exam/"
+capture_path = "C:/Users/Elite/Desktop/2차/"
 all_words = 0
 counts = 0
 fail = []
 han = {}
 
-for i in range(1,392):
+for i in range(1,84):
     #box 불러오기
-    df = pd.read_csv(capture_path + 'exam (' + str(i) +').box', sep=' ', header=None)
+    df = pd.read_csv(capture_path + 'second (' + str(i) +').box', sep=' ', header=None, engine='python', encoding='utf-8')
     box_data = df[0].tolist()
     print(df)
     print(box_data)
 
     #img파일
-    img_path = capture_path + "test (" + str(i) + ").jpg"
+    img_path = capture_path + "second (" + str(i) + ").jpg"
     fp = open(img_path, "rb")
     img = PIL.Image.open(fp)
     #config setting
-    config= ('-l 1499lstm+52font --oem2 --psm6')
+    config= ('-l vkor+52font --oem0 --psm6')
     #ocr_result
     txt = pytesseract.image_to_string(img, config= config)
     all_words += 7
     txt = txt.replace(' ', '')
+
+    if bool(re.search('\d{2}\D\d{4}', txt)):
+        txt = re.search('\d{2}\D\d{4}', txt).group()
+        print("OCR 2차 :", txt)
+    elif bool(re.search('\d{2}\D', txt)) and bool(re.search('\d{4}', txt)):
+        txt = re.search('\d{2}\D', txt).group() + re.search('\d{4}', txt).group()
+        print("OCR 2차_2 :", txt)
+
     try:
         for index in range(len(box_data)):
             if str(box_data[index]) != txt[index]:
@@ -40,6 +49,8 @@ for i in range(1,392):
     print('index' + str(i))
     f = open(capture_path + 'font_testkor' + '.txt', 'a')
     f.write(txt+ '\n')
+
+
 
     #한글 단어 개수 세기
     for idx in box_data:
