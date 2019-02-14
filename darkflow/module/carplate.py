@@ -133,7 +133,7 @@ class carplateDetecting:
                 y1 = y
                 x2 = x1+w
                 y2 = y1+h
-                plate = image[y1:y2, x1:x2]
+                plate = image[y1-5:y2+5, x1:x2]
                 plates.append(plate)
 
         if len(plates) == 0:
