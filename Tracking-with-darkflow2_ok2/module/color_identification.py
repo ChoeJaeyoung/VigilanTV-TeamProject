@@ -109,6 +109,8 @@ class colorIdentification():
             color_count[i] = 30000 - num_a.count(0)
 
         color_count['red'] = color_count['red1'] + color_count['red2']
+        color_count['black'] = color_count['black1'] + color_count['black2']
+        color_count['white_or_gray'] = color_count['white_or_gray1'] + color_count['white_or_gray2']
 
         car_color = max(color_count.items(), key=lambda x: x[1])[0]
 
