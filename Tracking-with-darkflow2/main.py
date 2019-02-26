@@ -176,7 +176,7 @@ def removeNoise(img_result):
     img_blur = cv2.bilateralFilter(img_big, 8, 10, 10)
     #cv2.imshow('gray', img_blur)
 
-    img_edge2 = cv2.Canny(img_big, 100, 300, 3)
+    img_edge2 = cv2.Canny(img_big, 100, 200, 3)
     #cv2.imshow('Canny', img_edge2)
 
     cnt, contours, hierarchy = cv2.findContours(img_edge2, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
