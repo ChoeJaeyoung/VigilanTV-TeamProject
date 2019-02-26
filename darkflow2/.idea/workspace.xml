@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4fd7780c-01c9-41dd-b15d-f364be683128" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/cfg/coco.names" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/extraction.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/extraction.conv.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/tiny-yolo-4c.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/tiny-yolo-voc.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/tiny-yolo.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/v1.1/person-bottle.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/v1.1/tiny-coco.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/v1.1/tiny-yolo-4c.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/v1.1/tiny-yolov1.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/v1.1/yolo-coco.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/v1.1/yolov1.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/v1/tiny-old.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/v1/tiny.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/v1/yolo-2c.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/v1/yolo-4c.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/v1/yolo-full.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/v1/yolo-small.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/v1/yolo-tiny-extract.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/v1/yolo-tiny-extract_.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/v1/yolo-tiny.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/v1/yolo-tiny4c.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/yolo-voc.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/yolo.cfg" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.4403101">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/MOV_main.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="5130">
+                  <caret line="281" column="64" selection-start-line="281" selection-start-column="64" selection-end-line="281" selection-end-column="64" />
+                  <folding>
+                    <element signature="e#0#29#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/main.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="171">
+                  <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+                  <folding>
+                    <element signature="e#0#36#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="399">
+                  <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+                  <folding>
+                    <element signature="e#22#57#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/camera.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="95">
+                  <caret line="107" column="56" selection-start-line="107" selection-start-column="56" selection-end-line="107" selection-end-column="56" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getPoi</find>
+      <find>자동차사진</find>
+      <find>box_id</find>
+      <find>saveTracker</find>
+      <find>saveTra</find>
+      <find>__name__</find>
+      <find>idlist[num]</find>
+      <find>file</find>
+      <find>open</find>
+      <find>return</find>
+      <find>saveEvi</find>
+      <find>car_evidence</find>
+      <find>saveEvidenceCrop</find>
+      <find>saveTrackerCrop</find>
+      <find>evidence</find>
+      <find>전체사진</find>
+      <find>time</find>
+      <find>real</find>
+      <find>capture_path</find>
+      <find>idlist</find>
+      <find>gen</find>
+      <find>camera</find>
+      <find>starting</find>
+      <find>frames</find>
+      <find>print</find>
+      <find>request</find>
+      <find>URL</find>
+      <find>show</find>
+      <find>imshow</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/MOV_main2.py" />
+        <option value="$USER_HOME$/PycharmProjects/VigilanTV-TeamProject/Tracking-with-darkflow2/main.py" />
+        <option value="$PROJECT_DIR$/main - 복사본.py" />
+        <option value="$PROJECT_DIR$/multiTest2.py" />
+        <option value="$PROJECT_DIR$/multiTest.py" />
+        <option value="$PROJECT_DIR$/../flask-video-streaming/templates/index.html" />
+        <option value="$PROJECT_DIR$/../flask-video-streaming/app.py" />
+        <option value="$PROJECT_DIR$/../flask-video-streaming/base_camera.py" />
+        <option value="$PROJECT_DIR$/../flask-video-streaming/camera.py" />
+        <option value="$PROJECT_DIR$/MOV_main.py" />
+        <option value="C:/python/Anaconda3/envs/cuda/Lib/site-packages/thriftpy/parser/parser.py" />
+        <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/camera.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1403" />
+    <option name="y" value="38" />
+    <option name="width" value="580" />
+    <option name="height" value="1035" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="darkflow2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="darkflow2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="darkflow2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GIT/VigilanTV-TeamProject" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4fd7780c-01c9-41dd-b15d-f364be683128" name="Default Changelist" comment="" />
+      <created>1549598537611</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1549598537611</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1123" y="31" width="464" height="828" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.52224827" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32907802" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50033045" side_tool="true" weight="0.34468085" />
+      <window_info anchor="bottom" auto_hide="true" id="Terminal" order="9" sideWeight="0.49966952" weight="0.4362606" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32907802" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/main - 복사본.py" />
+    <entry file="file://$USER_HOME$/PycharmProjects/VigilanTV-TeamProject/Tracking-with-darkflow2/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="419" selection-start-line="419" selection-end-line="419" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOV_main2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5300">
+          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiTest2.py" />
+    <entry file="file://C:/python/Anaconda3/Lib/importlib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="107" column="4" selection-start-line="107" selection-start-column="4" selection-end-line="107" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/_AZTMP0_/camera.py" />
+    <entry file="file://$PROJECT_DIR$/../flask-video-streaming/camera_pi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/python/Anaconda3/Lib/site-packages/flask/templating.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="48" lean-forward="true" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/1232728770/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="1131" column="34" lean-forward="true" selection-start-line="1131" selection-start-column="34" selection-end-line="1131" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/python/Anaconda3/envs/cuda/Lib/threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="866" lean-forward="true" selection-start-line="866" selection-end-line="866" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../flask-video-streaming/base_camera.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="80" column="31" lean-forward="true" selection-start-line="80" selection-start-column="31" selection-end-line="80" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../flask-video-streaming/camera.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../flask-video-streaming/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#22#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../flask-video-streaming/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="43" lean-forward="true" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../flask-video-streaming/camera_opencv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOV_main_prototype.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3/datetime.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/python/Anaconda3/Lib/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/python/Anaconda3/envs/cuda/Lib/site-packages/thriftpy/parser/parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="481" column="41" lean-forward="true" selection-start-line="481" selection-start-column="41" selection-end-line="481" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOV_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5130">
+          <caret line="281" column="64" selection-start-line="281" selection-start-column="64" selection-end-line="281" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+          <folding>
+            <element signature="e#22#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/camera.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="107" column="56" selection-start-line="107" selection-start-column="56" selection-end-line="107" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
