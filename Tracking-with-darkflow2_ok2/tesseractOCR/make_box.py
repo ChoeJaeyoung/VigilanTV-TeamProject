@@ -4,25 +4,25 @@ import PIL
 import pandas as pd
 import re
 
-capture_path = "C:/Users/Elite/Desktop/2차/"
+capture_path = "C:/Users/Elite/Desktop/"
 all_words = 0
 counts = 0
 fail = []
 han = {}
 
-for i in range(1,84):
+for i in range(2,3):
     #box 불러오기
-    df = pd.read_csv(capture_path + 'second (' + str(i) +').box', sep=' ', header=None, engine='python', encoding='utf-8')
-    box_data = df[0].tolist()
-    print(df)
-    print(box_data)
+    # df = pd.read_csv(capture_path + 'second (' + str(i) +').box', sep=' ', header=None, engine='python', encoding='utf-8')
+    # box_data = df[0].tolist()
+    # print(df)
+    # print(box_data)
 
     #img파일
-    img_path = capture_path + "second (" + str(i) + ").jpg"
+    img_path = capture_path + "test" + str(i) + ".jpg"
     fp = open(img_path, "rb")
     img = PIL.Image.open(fp)
     #config setting
-    config= ('-l vkor+52font --oem0 --psm6')
+    config= ('-l 1499lstm+52font --oem1 --psm6')
     #ocr_result
     txt = pytesseract.image_to_string(img, config= config)
     all_words += 7
@@ -35,29 +35,26 @@ for i in range(1,84):
         txt = re.search('\d{2}\D', txt).group() + re.search('\d{4}', txt).group()
         print("OCR 2차_2 :", txt)
 
-    try:
-        for index in range(len(box_data)):
-            if str(box_data[index]) != txt[index]:
-                counts += 1
-                fail.append(str(i))
-                print('실패 : ' + str(i))
-    except IndexError:
-        txt = txt + 'a'
-    #make_box
-    #txt = pytesseract.image_to_boxes(img, lang="vikor2")
+    # try:
+    #     for index in range(len(box_data)):
+    #         if str(box_data[index]) != txt[index]:
+    #             counts += 1
+    #             fail.append(str(i))
+    #             print('실패 : ' + str(i))
+    # except IndexError:
+    #     txt = txt + 'a'
+
     print("ocr 결과 : " + txt)
     print('index' + str(i))
     f = open(capture_path + 'font_testkor' + '.txt', 'a')
     f.write(txt+ '\n')
 
-
-
-    #한글 단어 개수 세기
-    for idx in box_data:
-        if idx in han:
-            han[idx] = han[idx] + 1
-        else:
-            han[idx] = 1
+    # #한글 단어 개수 세기
+    # for idx in box_data:
+    #     if idx in han:
+    #         han[idx] = han[idx] + 1
+    #     else:
+    #         han[idx] = 1
 
 print('총 단어의 수 :' + str(all_words))
 print('틀린 단어 수 : ' + str(counts))
